@@ -68,8 +68,8 @@ body {
 .name{
  font-family: 'Brush Script MT';
   margin: 0;
-  font-size: 1.6em;
-  margin-top: 2em;
+  font-size: 1em;
+  margin-top: 4em;
   color: white;
   text-shadow: 0 0 0.05em #fff, 0 0 0.2em #F08080, 0 0 0.3em #F08080;
   transform: rotate(-0deg);
@@ -78,6 +78,18 @@ body {
    z-index:1000
 }
 
+.name1{
+	font-family: 'Brush Script MT';
+	 margin: 0;
+	 font-size: 1em;
+	 margin-top: 40em;
+	 color: white;
+	 text-shadow: 0 0 0.05em #fff, 0 0 0.2em #F08080, 0 0 0.3em #F08080;
+	 transform: rotate(-0deg);
+	 /* animation: animate 1.2s infinite; */
+	 position: absolute;
+	  z-index:1000
+   }
 
 
 img {
@@ -97,3 +109,4 @@ img {
 	mask-border: var(--_m);
 	clip-path: polygon(-41% 0, 50% 91%, 141% 0);
   }
+  
