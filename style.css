@@ -91,6 +91,19 @@ body {
 	  z-index:1000
    }
 
+   .name2{
+	font-family: 'Brush Script MT';
+	 margin: 0;
+	 font-size: 2em;
+	 margin-top: -15em;
+	 color: white;
+	 text-shadow: 0 0 0.05em #fff, 0 0 0.2em #F08080, 0 0 0.3em #F08080;
+	 transform: rotate(-0deg);
+	 /* animation: animate 1.2s infinite; */
+	 position: absolute;
+	  z-index:1000
+   }
+
 
 img {
 	aspect-ratio: 1;
