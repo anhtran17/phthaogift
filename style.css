@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@900&display=swap');
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #2c3e50
+}
+
+.box {
+	width: 1000px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+}
+
+#pinkboard {
+	position: relative;
+	margin: auto;
+	height: 750px;
+	width: 750px;
+	animation: animate 1.2s infinite;
+}
+
+#pinkboard:before, #pinkboard:after {
+	content: '';
+	position: absolute;
+	background: #d63031;
+	width: 100px;
+	height: 160px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+}
+
+#pinkboard:before {
+	left: 100px;
+	transform: rotate(-45deg);
+	transform-origin: 0 100%;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+				0 10px 10px rgba(0,0,0,0.22);
+}
+
+#pinkboard:after {
+	left: 0;
+	transform: rotate(45deg);
+	transform-origin: 100% 100%;
+}
+
+@keyframes animate {
+	0% {
+		transform: scale(1);
+	}
+	30% {
+		transform: scale(0.9);
+	}
+	60% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+
+.name{
+ font-family: 'Brush Script MT';
+  margin: 0;
+  font-size: 1.6em;
+  margin-top: 2em;
+  color: white;
+  text-shadow: 0 0 0.05em #fff, 0 0 0.2em #F08080, 0 0 0.3em #F08080;
+  transform: rotate(-0deg);
+  animation: animate 1.2s infinite;
+  position: absolute;
+   z-index:1000
+}
+
+
+
+img {
+	aspect-ratio: 1;
+	object-fit: cover;
+	max-width:250px;
+	max-height:250px;
+	width: auto;
+	height: auto;
+	animation: animate 1.2s infinite;
+	filter: grayscale(50%);
+	-webkit-filter: brightness(18);
+	filter: drop-shadow(0 0 5px rgb(10, 86, 113));
+	opacity: 0.35;
+	--_m: radial-gradient(#000 69%, #0000 70%) 84.5% fill/100%;
+	-webkit-mask-box-image: var(--_m);
+	mask-border: var(--_m);
+	clip-path: polygon(-41% 0, 50% 91%, 141% 0);
+  }
